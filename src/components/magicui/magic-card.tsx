@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 import { CSSProperties, ReactElement, ReactNode, useEffect, useRef, useState } from "react";
 
 interface MousePosition {
@@ -101,7 +101,7 @@ const MagicContainer = ({ children, className }: MagicContainerProps) => {
 
 interface MagicCardProps {
     /**
-     * @default <div />
+     * @default <div/> />
      * @type ReactElement
      * @description
      * The component to be rendered as the card

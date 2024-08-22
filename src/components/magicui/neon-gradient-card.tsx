@@ -1,6 +1,6 @@
 "use client";
 
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/utils";
 import { CSSProperties, ReactElement, ReactNode, useEffect, useRef, useState } from "react";
 
 interface NeonColorsProps {
@@ -63,7 +63,7 @@ const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
     className,
     children,
     borderSize = 2,
-    borderRadius = 20,
+    borderRadius = 25,
     neonColors = {
         firstColor: "#ff00aa",
         secondColor: "#00FFF1",

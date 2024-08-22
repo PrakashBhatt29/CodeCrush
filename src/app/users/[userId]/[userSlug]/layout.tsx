@@ -3,7 +3,6 @@ import { users } from "@/models/server/config";
 import { UserPrefs } from "@/store/Auth";
 import convertDateToRelativeTime from "@/utils/relativeTime";
 import React from "react";
-import EditButton from "./EditButton";
 import Navbar from "./Navbar";
 import { IconClockFilled, IconUserFilled } from "@tabler/icons-react";
 
@@ -41,9 +40,6 @@ const Layout = async ({
                                 <IconClockFilled className="w-4 shrink-0" /> Last activity&nbsp;
                                 {convertDateToRelativeTime(new Date(user.$updatedAt))}
                             </p>
-                        </div>
-                        <div className="shrink-0">
-                            <EditButton />
                         </div>
                     </div>
                 </div>

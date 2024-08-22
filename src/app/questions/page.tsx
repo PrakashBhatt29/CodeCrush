@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import ShimmerButton from "@/components/magicui/shimmer-button";
 import QuestionCard from "@/components/QuestionCard";
+import QuestionForm from "@/components/QuestionForm";
 import { UserPrefs } from "@/store/Auth";
 import Pagination from "@/components/Pagination";
 import Search from "./Search";
