@@ -5,7 +5,6 @@ CodeCrush Dev Community is a collaborative platform where developers connect to 
 - [Typescript](https://www.typescriptlang.org/)
 - [Appwrite](https://appwrite.io/)
 - [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction)
-- [NextJS](https://nextjs.org/docs)
 - [shadcn](https://ui.shadcn.com/docs)
 - [magicUI](https://magicui.design/docs)
 
