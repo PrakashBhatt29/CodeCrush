@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 import Header from "./components/Header";
 export const metadata: Metadata = {
   title: "CodeCrush",
-  description: "Empowering Developers Worldwide",
+  description: "A Developers Community website",
 };
 
 export default function RootLayout({
