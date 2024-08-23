@@ -73,12 +73,14 @@ export default async function NeonGradientCardDemo({
           <Quote/>
         </div>
       </div>
+      <div className="flex justify-center">
         <div className="mb-4 max-w-3xl space-y-6">
             {questions.documents.map(ques => (
               <QuestionCard key={ques.$id} ques={ques} />
             ))}
           </div>
-        <Pagination total={questions.total} limit={25} />
+        <Pagination total={questions.total} limit={5} />
+        </div>
     </div>
   );
 };
