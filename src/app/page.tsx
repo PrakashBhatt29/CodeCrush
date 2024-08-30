@@ -82,13 +82,6 @@ export default async function NeonGradientCardDemo({
               </Marquee>
             ))}
           </div>
-          <div className="w-full mb-4 max-w-3xl space-y-6">
-            {questions.documents.map(ques => (
-              <Marquee reverse pauseOnHover key={ques.$id} className="[--duration:20s]">
-              <QuestionCard key={ques.$id} ques={ques} />
-              </Marquee>
-            ))}
-          </div>
         </div>
     </div>
   );
