@@ -1,5 +1,6 @@
 import { Card } from "@/components/Card";
-import Pagination from "@/components/Pagination";
+import Marquee from "@/components/magicui/marquee";
+// import Pagination from "@/components/Pagination";
 import QuestionCard from "@/components/QuestionCard";
 import { Quote } from "@/components/Quote";
 import { answerCollection, db, questionCollection, voteCollection } from "@/models/name";
@@ -76,9 +77,17 @@ export default async function NeonGradientCardDemo({
       <div className="flex justify-center">
         <div className="w-full mb-4 max-w-3xl space-y-6">
             {questions.documents.map(ques => (
+              <Marquee pauseOnHover className="[--duration:20s]">
               <QuestionCard key={ques.$id} ques={ques} />
+              </Marquee>
             ))}
-            <Pagination total={questions.total} limit={5} />
+          </div>
+          <div className="w-full mb-4 max-w-3xl space-y-6">
+            {questions.documents.map(ques => (
+              <Marquee reverse pauseOnHover className="[--duration:20s]">
+              <QuestionCard key={ques.$id} ques={ques} />
+              </Marquee>
+            ))}
           </div>
         </div>
     </div>
