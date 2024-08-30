@@ -77,8 +77,8 @@ export default async function NeonGradientCardDemo({
       <div className="flex justify-center">
         <div className="w-full mb-4 max-w-3xl space-y-6">
             {questions.documents.map(ques => (
-              <Marquee pauseOnHover key={ques.$id} className="[--duration:20s]">
-              <QuestionCard key={ques.$id} ques={ques} />
+              <Marquee pauseOnHover key={ques.$id} ques={ques} className="[--duration:20s]">
+              {/* <QuestionCard key={ques.$id} ques={ques} /> */}
               </Marquee>
             ))}
           </div>
